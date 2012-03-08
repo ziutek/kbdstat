@@ -16,7 +16,7 @@ diStat = {}
 if path.exists(filename):
     stat = yaml.load(file(filename, "r"))
 if path.exists(diFilename):
-    stat = yaml.load(file(diFilename, "r"))
+    diStat = yaml.load(file(diFilename, "r"))
 
 while not events.listening():
     # Wait for init
