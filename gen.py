@@ -10,7 +10,8 @@ for l in sys.stdin:
         continue
     c = c[4:].lower()
     if c.startswith("alt_") or c.startswith("control_") or \
-            c.startswith("shift_"):
+            c.startswith("shift_") or c.startswith("super_") or \
+            c.startswith("iso_"):
         continue
     elif c == "backspace" or c == "end" or c == "escape" or \
             c == "left" or c == "right" or c == "up" or c == "down" or \
